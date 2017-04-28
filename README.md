@@ -1,0 +1,3 @@
+# Coding Dojo - Kata MineSweeper
+
+

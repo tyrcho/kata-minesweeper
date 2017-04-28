@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>java 8</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <textarea id="source">
+    class: coding-dojo, title
+
+    ![:scale 100%](images/codingDojo.png)
+
+    ---
+
+    # Coding Dojo ?
+
+    * C'est quoi ?
+      - Lieu d'apprentissage
+    * Pour quoi faire ?
+      - ~~Terminer l'exercice~~
+      - ~~Compétition~~
+      - S'améliorer en développement
+      - **APPRENDRE** !
+    * Terrain d'entrainement
+      - ~~Pression~~
+      - Error is ok
+
+    ---
+
+    # Organisation
+
+    * Pair Programming
+    * TDD :
+      - Red
+      - Green
+      - Refactor
+    
+    * Sujet : Java 8 et les streams
+
+    ---
+
+    # Planning du dojo
+
+    * un peu de Théorie (20min.)
+    * Une itération pour commencer (20min.)
+    * Rétro. (5min.)
+    * Itération2 (20min.)
+    * Rétro. (5min.)
+    * Itération3 (20min.)
+    * Rétro. (5min.)
+    * Rétro. & Conclusion (10min.)
+
+    ---
+
+    # Installation
+
+    * Environnement : (Eclipse ou pour changer [IntelliJ](https://www.jetbrains.com/idea/))
+    * Le [code](https://github.com/jripault/KataMock)
+    * Pour les tests :
+      * [Junit](http://junit.org/)
+      * [AssertJ](http://joel-costigliola.github.io/assertj/) (librairie d'assertions, fork de FestAssert)
+      * [Eclemma](http://www.eclemma.org/) (plugin couverture de code sous Eclipse)
+      * [InfiniTest](http://infinitest.github.io/) (plugin IntelliJ/Eclipse pour lancer les tests unitaires automatiquement à chaque changement)
+      * [MoreUnit](http://moreunit.sourceforge.net/) (plugin IntelliJ/Eclipse pour améliorer l'intégration de ses tests unitaires dans l'IDE)
+
+    ---
+
+    # Kata !
+
+    Whatever luck I had, I made. I was never a natural athlete, but I paid my dues in sweat and concentration and took the time necessary to learn Karate and become World Champion.
+
+    --
+
+    *Chuck Norris (American martial artist and actor. Also, the only man who has counted to infinity. Twice.)*
+
+    ---
+
+    # Un peu de théorie
+
+    Quoi de neuf dans Java 8 (release date : 18/03/2014)
+
+    * Interfaces - default method
+    * Date & Time
+    * Collections - forEach, ...
+    * Optional
+    * Lambda & FunctionalInterface
+    * Streams
+
+    # Rétro du Dojo (10 min)
+
+    * What went well ?
+    * What could be improved ?
+    * Actions
+    * ROTI
+
+
+
+
+
+
+</textarea>
+
+<script src="downloads/remark-latest.min.js"></script>
+<script>var hljs = remark.highlighter.engine;</script>
+<script src="remark.language.js"></script>
+<script>
+  remark.macros.scale = function (percentage) {
+    var url = this;
+    return '<img src="' + url + '" style="width: ' + percentage + '" />';
+  };
+
+  var slideshow = remark.create({
+    highlightStyle: 'github',
+    highlightLanguage: 'remark',
+    highlightLines: true
+  }) ;
+</script>
+<script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-44561333-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.scripts[0];
+    s.parentNode.insertBefore(ga, s);
+  }());
+</script>
+</body>
+</html>
