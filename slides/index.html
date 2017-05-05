@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>java 8</title>
+  <title>Minesweeper Kata</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
 
@@ -16,54 +16,51 @@
 
     # Coding Dojo ?
 
-    * C'est quoi ?
-      - Lieu d'apprentissage
-    * Pour quoi faire ?
-      - ~~Terminer l'exercice~~
-      - ~~Compétition~~
-      - S'améliorer en développement
-      - **APPRENDRE** !
-    * Terrain d'entrainement
-      - ~~Pression~~
+    * What ?
+      - Place to learn
+    * What for ?
+      - ~~Finish the exercise~~
+      - ~~Competition~~
+      - Become a better developper
+      - **LEARN** !
+    * Safe training groud
+      - ~~Pressure~~
       - Error is ok
 
     ---
 
-    # Organisation
+    # Organization
 
     * Pair Programming
     * TDD :
       - Red
       - Green
-      - Refactor
-    
-    * Sujet : Java 8 et les streams
+      - Refactor    
+    * Topic : MineSweeper
 
     ---
 
-    # Planning du dojo
+    # Planning 
 
-    * un peu de Théorie (20min.)
-    * Une itération pour commencer (20min.)
-    * Rétro. (5min.)
-    * Itération2 (20min.)
-    * Rétro. (5min.)
-    * Itération3 (20min.)
-    * Rétro. (5min.)
-    * Rétro. & Conclusion (10min.)
+    * Introduction & tools (15 min)
+    * 1st iteration (20 min)
+    * Retro. (5 min)
+    * 2nd iteration (20 min)
+    * Retro. (5 min)
+    * 3rd iteration (20 min)
+    * Final debrief (10 min)
 
     ---
 
     # Installation
 
-    * Environnement : (Eclipse ou pour changer [IntelliJ](https://www.jetbrains.com/idea/))
-    * Le [code](https://github.com/jripault/KataMock)
-    * Pour les tests :
+    * IDE
+    * [quickstart](https://github.com/tyrcho/kata-minesweeper)
+    * Unit Tests
       * [Junit](http://junit.org/)
-      * [AssertJ](http://joel-costigliola.github.io/assertj/) (librairie d'assertions, fork de FestAssert)
-      * [Eclemma](http://www.eclemma.org/) (plugin couverture de code sous Eclipse)
-      * [InfiniTest](http://infinitest.github.io/) (plugin IntelliJ/Eclipse pour lancer les tests unitaires automatiquement à chaque changement)
-      * [MoreUnit](http://moreunit.sourceforge.net/) (plugin IntelliJ/Eclipse pour améliorer l'intégration de ses tests unitaires dans l'IDE)
+      * [AssertJ](http://joel-costigliola.github.io/assertj/) 
+      * [Eclemma](http://www.eclemma.org/) 
+      * [InfiniTest](http://infinitest.github.io/) 
 
     ---
 
@@ -77,18 +74,76 @@
 
     ---
 
-    # Un peu de théorie
+    # MineSweeper
 
-    Quoi de neuf dans Java 8 (release date : 18/03/2014)
+    Have you ever played Minesweeper? It’s a cute little game which comes within a certain Operating System whose name we can’t really remember. 
 
-    * Interfaces - default method
-    * Date & Time
-    * Collections - forEach, ...
-    * Optional
-    * Lambda & FunctionalInterface
-    * Streams
+    Well, the goal of the game is to find all the mines within an MxN field. 
 
-    # Rétro du Dojo (10 min)
+    To help you, the game shows a number in a square which tells you how many mines there are adjacent to that square. 
+
+    http://codingdojo.org/kata/Minesweeper/
+
+    ---
+
+    # Problem Description
+
+    For instance, take the following 4x4 field with 2 mines (which are represented by an * character):
+    
+        *...
+        ....
+        .*..
+        ....
+
+    The same field including the hint numbers described above would look like this:
+
+        *100
+        2210
+        1*10
+        1110
+
+    ---
+
+    # Suggested Test Case 1
+
+    test input:
+
+        *...
+        ....
+        .*..
+        ....
+
+    and output :
+
+        *100
+        2210
+        1*10
+        1110
+
+
+    ---
+
+    # Suggested Test Case 2
+
+    test input:
+
+        **...
+        .....
+        .*...
+
+
+    and output :
+
+        **100
+        33200
+        1*100
+
+
+
+
+    ---
+
+    # Final debrief (10 min)
 
     * What went well ?
     * What could be improved ?
@@ -112,22 +167,8 @@
   };
 
   var slideshow = remark.create({
-    highlightStyle: 'github',
-    highlightLanguage: 'remark',
-    highlightLines: true
+    highlightStyle: 'github'
   }) ;
-</script>
-<script>
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-44561333-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script');
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
-    var s = document.scripts[0];
-    s.parentNode.insertBefore(ga, s);
-  }());
 </script>
 </body>
 </html>
